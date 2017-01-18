@@ -6,7 +6,7 @@ var glob = require('glob');
 
 
 exports.saveData = function(req, res){
- glob("localDocs/graphs/*", function(err, files) {
+/* glob("localDocs/graphs/*", function(err, files) {
     for(var i=9; i<10; i++){
         var content = fs.readFileSync(files[i]);
         var jsonContent = JSON.parse(content);
@@ -60,7 +60,7 @@ exports.saveData = function(req, res){
 
     }
 });
-
+*/
 var jsonEvent;
     glob("localDocs/top50/*", function(err, files){
         for(var j=0; j<files.length; j++){

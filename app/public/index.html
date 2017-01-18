@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html ng-app="MEH">
+  <head>
+    <title>The Year of MEH</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+     <div id="wrapper">
+     <main>
+          <section id="page1">
+          <section id="line"></section>
+             <a href="index.html" class="logo"> </a>
+             <p id="pageOneTitle">The year 2016 in<br>
+                somber retrospective
+             </p>
+             <h1 class="scroll">Scroll for clinical depression</h1>
+             <img src="images/Downarrow.svg" alt="arrow" class="arrow">
+          </section> 
+          <section id="page2" >
+            <section id="line2"></section>
+            <section id="line3"></section>
+            <a href="index.html" class="logo"> </a>
+            <p class="page2Intro">
+              You've heard it before, how 2016 was a terrible,<br>
+              awful year. It's been called that countless times in the media.<br><br>
+              But let's dig deeper: when, how and why did we<br>
+              come to this conclusion? When did we lose hope,<br>
+              if we even had any to begin with?<br><br>
+              Or imply put, what about 2016 was so <span id="diff">MEH</span>.
+            </p>
+             <h1 id="scroll2">We're getting to it</h1>
+             <img src="images/Downarrow.svg" alt="arrow" id="arrow2">
+             <p class="page2Intro2"> 
+              Featuring data from the New York Times, Fox News,<br>
+              Washington Post, and more, collected and aggregated by<br>
+              MediaCloud<br><br>
+              Powered by shattered hopes and tears.
+             </p>
+          </section>
+          <section id="page3">
+            <section id="line4"></section>
+            <section id="line5"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h1 id="chap1">Chapter 1:</h1>
+            <h2 id="chap1Sec">Abandon all hope.</h2>
+            <p id="P1">Were we off to a bad start?</p>
+          </section> 
+          <section ng-controller="commonCtrl" id="page4">
+            <section id="line6"></section>
+            <section id="line7"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h2 id="headLine">Abandon all hope.</h2>
+            <p id="P2">
+              For the first week of January, we had our hopes up, it seems.<br>
+              Interestingly, many positive words ranked fairly high, maybe<br>
+              suggesting a glimmer of hope for the upcoming year?
+            </p>
+            <p id="side">
+              Word frequency (sampled),<br>
+              January 1 — January 7
+            </p>
+            <tbody>
+             <span ng-repeat="first in commonFirstWeek | limitTo:4:0" ng-class="first.name">
+                {{first.word}}
+             </span>
+              <span ng-repeat="first in commonFirstWeek | limitTo:3:4" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in commonFirstWeek | limitTo:5:9" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:4:14" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:5:18" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:5:23" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:6:29" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:6:35" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonFirstWeek | limitTo:7:43" ng-class="first.name">
+                {{first.word}}
+             </span>
+            </tbody>
+          </section>
+            <section ng-controller="commonCtrl" id="page5">
+            <section id="line8"></section>
+            <section id="line9"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h2 id="headLine">Abandon all hope.</h2>
+            <p id="P3">
+              For the first week of January, we<br>
+              had our hopes up, it seems.<br>
+              Interestingly, many positive words ranked fairly high, maybe<br>
+              suggesting a glimmer of hope for<br>
+              the upcoming year?
+            </p>
+            <p id="P4">
+              Also, Donald Trump ranks very high
+              here. This is very symptomatic of<br>
+              2016 in general, but perhaps
+              tellingly, Hillary Clinton is far below<br>
+              him on this list. We'll discuss this in
+              greater detail at a later<br> chapter.
+            </p>
+            <p id="side1">
+              Word frequency (sampled),<br>
+              January 1 — January 7
+            </p>
+            <tbody>
+             <span id="l1" ng-repeat="first in commonFirstWeek | limitTo:4:0" ng-class="first.name">
+                {{first.word}}
+             </span>
+              <span id="l2" ng-repeat="first in commonFirstWeek | limitTo:3:4" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l3" ng-repeat="first in commonFirstWeek | limitTo:5:9" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l4" ng-repeat="first in commonFirstWeek | limitTo:4:14" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l5" ng-repeat="first in commonFirstWeek | limitTo:5:18" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l6" ng-repeat="first in commonFirstWeek | limitTo:4:23" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l7" ng-repeat="first in commonFirstWeek | limitTo:6:29" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l8" ng-repeat="first in commonFirstWeek | limitTo:6:35" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span id="l9" ng-repeat="first in commonFirstWeek | limitTo:7:43" ng-class="first.name">
+                {{first.word}}
+             </span>
+            </tbody>
+          </section>
+          <section id="page6" ng-controller="commonCtrl">
+            <section id="line10"></section>
+            <section id="line11"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h2 id="headLine">Abandon all hope.</h2>
+            <p id="P4">
+              As for the rest of the year, Donald Trump is the clear winner here,<br>
+              with the media talking about almost nothing except him, and (to a<br>
+              much lesser extent), his opponents Clinton and Sanders.
+            </p>
+            <p id="P4">
+              Also very differently from the first week of January, love is not<br>
+              represented, barely any positive terms stand out. But was media<br>
+              coverage truly so grim? Let's find out.
+            </p>
+            <p id="side2">
+              Word frequency (sampled),<br>
+              January 1 — December 31
+            </p>
+            <tbody>
+             <span ng-repeat="first in commonYear | limitTo:3:0" ng-class="first.name">
+                {{first.word}}
+             </span>
+              <span ng-repeat="first in commonYear | limitTo:4:3" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in commonYear | limitTo:4:7" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonYear | limitTo:5:11" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonYear | limitTo:3:16" ng-class="first.name">
+                {{first.word}}
+             </span>
+                    <span ng-repeat="first in commonYear | limitTo:7:23" ng-class="first.name">
+                {{first.word}}
+             </span>
+            </tbody>
+          </section>
+          <section id="page7">
+            <section id="line12"></section>
+            <section id="line11"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h1 id="chap1">Chapter 2:</h1>
+            <h2 id="chap1Sec">Extreme edition.</h2>
+            <p id="P1">Terror, refugees and how we became very, very scared.</p>
+          </section>
+          <!--TAL code!!! put-->
+          <section id="page8">
+            <section id="line13"></section>
+            <section id="line11"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h1 id="chap1">Chapter 3:</h1>
+            <h2 id="chap1Sec">But hope remains.</h2>
+            <p id="P1">Look on the bright side?</p>
+          </section>
+          <section id="page9" ng-controller="commonCtrl">
+            <section id="line13"></section>
+            <section id="line11"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h2 id="headLine">Year of the obituary.</h2>
+            <p id="P4">
+              Let's look back at January,<br>
+              this time, the second week of January.<br>
+              A very frequent phrase for this period is none other than the (late)<br>
+              musician David Bowie, who for many decades ruled the charts.
+            </p>
+            <p id="side">
+              Word frequency (sampled),<br>
+              January 7 — January 14
+            </p>
+             <tbody>
+             <span ng-repeat="first in secondWeek | limitTo:4:0" ng-class="first.name">
+                {{first.word}}
+             </span>
+              <span ng-repeat="first in secondWeek | limitTo:3:4" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in secondWeek | limitTo:5:9" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in secondWeek | limitTo:4:14" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in secondWeek | limitTo:5:18" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in secondWeek | limitTo:6:23" ng-class="first.name">
+                {{first.word}}
+             </span>
+             <span ng-repeat="first in secondWeek | limitTo:4:31" ng-class="first.name">
+                {{first.word}}
+             </span>
+            </tbody>
+          </section>
+          <!---Tal code-->
+          <section id="page10">
+            <section id="line14"></section>
+            <section id="line11"></section>
+            <a href="index.html" class="logo2"> </a>
+            <h1 id="chap1">Chapter 4:</h1>
+            <h2 id="chap1Sec">But hope remains.</h2>
+            <p id="P1">Look on the bright side?</p>
+          </section>   
+    </main>
+         <div class="clear"></div>
+    <footer>
+    </footer>
+     </div> 
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-resource.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/commonFirstWeek.js"></script>
+  </body>
+ </html>
